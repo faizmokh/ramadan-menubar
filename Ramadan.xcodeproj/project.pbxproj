@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CFA651492D60351C00ADE77C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA6512F2D60351B00ADE77C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFA651362D60351B00ADE77C;
+			remoteInfo = Ramadan;
+		};
+		CFA651532D60351C00ADE77C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA6512F2D60351B00ADE77C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFA651362D60351B00ADE77C;
+			remoteInfo = Ramadan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFA651372D60351B00ADE77C /* Ramadan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ramadan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA651482D60351C00ADE77C /* RamadanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamadanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA651522D60351C00ADE77C /* RamadanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamadanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CFA651392D60351B00ADE77C /* Ramadan */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Ramadan;
+			sourceTree = "<group>";
+		};
+		CFA6514B2D60351C00ADE77C /* RamadanTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RamadanTests;
+			sourceTree = "<group>";
+		};
+		CFA651552D60351C00ADE77C /* RamadanUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RamadanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFA651342D60351B00ADE77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA651452D60351C00ADE77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA6514F2D60351C00ADE77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFA6512E2D60351B00ADE77C = {
+			isa = PBXGroup;
+			children = (
+				CFA651392D60351B00ADE77C /* Ramadan */,
+				CFA6514B2D60351C00ADE77C /* RamadanTests */,
+				CFA651552D60351C00ADE77C /* RamadanUITests */,
+				CFA651382D60351B00ADE77C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFA651382D60351B00ADE77C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA651372D60351B00ADE77C /* Ramadan.app */,
+				CFA651482D60351C00ADE77C /* RamadanTests.xctest */,
+				CFA651522D60351C00ADE77C /* RamadanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFA651362D60351B00ADE77C /* Ramadan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA6515C2D60351C00ADE77C /* Build configuration list for PBXNativeTarget "Ramadan" */;
+			buildPhases = (
+				CFA651332D60351B00ADE77C /* Sources */,
+				CFA651342D60351B00ADE77C /* Frameworks */,
+				CFA651352D60351B00ADE77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CFA651392D60351B00ADE77C /* Ramadan */,
+			);
+			name = Ramadan;
+			packageProductDependencies = (
+			);
+			productName = Ramadan;
+			productReference = CFA651372D60351B00ADE77C /* Ramadan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFA651472D60351C00ADE77C /* RamadanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA6515F2D60351C00ADE77C /* Build configuration list for PBXNativeTarget "RamadanTests" */;
+			buildPhases = (
+				CFA651442D60351C00ADE77C /* Sources */,
+				CFA651452D60351C00ADE77C /* Frameworks */,
+				CFA651462D60351C00ADE77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFA6514A2D60351C00ADE77C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CFA6514B2D60351C00ADE77C /* RamadanTests */,
+			);
+			name = RamadanTests;
+			packageProductDependencies = (
+			);
+			productName = RamadanTests;
+			productReference = CFA651482D60351C00ADE77C /* RamadanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFA651512D60351C00ADE77C /* RamadanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA651622D60351C00ADE77C /* Build configuration list for PBXNativeTarget "RamadanUITests" */;
+			buildPhases = (
+				CFA6514E2D60351C00ADE77C /* Sources */,
+				CFA6514F2D60351C00ADE77C /* Frameworks */,
+				CFA651502D60351C00ADE77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFA651542D60351C00ADE77C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CFA651552D60351C00ADE77C /* RamadanUITests */,
+			);
+			name = RamadanUITests;
+			packageProductDependencies = (
+			);
+			productName = RamadanUITests;
+			productReference = CFA651522D60351C00ADE77C /* RamadanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFA6512F2D60351B00ADE77C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CFA651362D60351B00ADE77C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					CFA651472D60351C00ADE77C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CFA651362D60351B00ADE77C;
+					};
+					CFA651512D60351C00ADE77C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CFA651362D60351B00ADE77C;
+					};
+				};
+			};
+			buildConfigurationList = CFA651322D60351B00ADE77C /* Build configuration list for PBXProject "Ramadan" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFA6512E2D60351B00ADE77C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CFA651382D60351B00ADE77C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFA651362D60351B00ADE77C /* Ramadan */,
+				CFA651472D60351C00ADE77C /* RamadanTests */,
+				CFA651512D60351C00ADE77C /* RamadanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFA651352D60351B00ADE77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA651462D60351C00ADE77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA651502D60351C00ADE77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFA651332D60351B00ADE77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA651442D60351C00ADE77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA6514E2D60351C00ADE77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFA6514A2D60351C00ADE77C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFA651362D60351B00ADE77C /* Ramadan */;
+			targetProxy = CFA651492D60351C00ADE77C /* PBXContainerItemProxy */;
+		};
+		CFA651542D60351C00ADE77C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFA651362D60351B00ADE77C /* Ramadan */;
+			targetProxy = CFA651532D60351C00ADE77C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CFA6515A2D60351C00ADE77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFA6515B2D60351C00ADE77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CFA6515D2D60351C00ADE77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ramadan/Ramadan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ramadan/Preview Content\"";
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.Ramadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CFA6515E2D60351C00ADE77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ramadan/Ramadan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ramadan/Preview Content\"";
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.Ramadan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CFA651602D60351C00ADE77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.RamadanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ramadan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ramadan";
+			};
+			name = Debug;
+		};
+		CFA651612D60351C00ADE77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.RamadanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ramadan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ramadan";
+			};
+			name = Release;
+		};
+		CFA651632D60351C00ADE77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.RamadanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Ramadan;
+			};
+			name = Debug;
+		};
+		CFA651642D60351C00ADE77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 96ZJY6AYCD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizmokh.RamadanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Ramadan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFA651322D60351B00ADE77C /* Build configuration list for PBXProject "Ramadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA6515A2D60351C00ADE77C /* Debug */,
+				CFA6515B2D60351C00ADE77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA6515C2D60351C00ADE77C /* Build configuration list for PBXNativeTarget "Ramadan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA6515D2D60351C00ADE77C /* Debug */,
+				CFA6515E2D60351C00ADE77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA6515F2D60351C00ADE77C /* Build configuration list for PBXNativeTarget "RamadanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA651602D60351C00ADE77C /* Debug */,
+				CFA651612D60351C00ADE77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA651622D60351C00ADE77C /* Build configuration list for PBXNativeTarget "RamadanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA651632D60351C00ADE77C /* Debug */,
+				CFA651642D60351C00ADE77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFA6512F2D60351B00ADE77C /* Project object */;
+}
