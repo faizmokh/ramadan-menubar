@@ -10,8 +10,13 @@ import SwiftUI
 @main
 struct RamadanApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra(
+            "Ramadan Countdown",
+            systemImage: "moonphase.waning.crescent"
+        ) {
             ContentView()
+                .frame(width: 300, height: 180)
         }
+        .menuBarExtraStyle(.window)
     }
 }
