@@ -9,13 +9,14 @@ import SwiftUI
 
 @main
 struct RamadanApp: App {
+    @StateObject private var viewModel = MainViewModel()
+    
     var body: some Scene {
-        MenuBarExtra(
-            "Ramadan Countdown",
-            systemImage: "moonphase.waning.crescent"
-        ) {
+        MenuBarExtra {
             MainView()
                 .frame(width: 300, height: 180)
+        } label: {
+            Text(viewModel.displayText)
         }
         .menuBarExtraStyle(.window)
     }
