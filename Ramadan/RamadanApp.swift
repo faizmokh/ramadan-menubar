@@ -14,7 +14,7 @@ struct RamadanApp: App {
             "Ramadan Countdown",
             systemImage: "moonphase.waning.crescent"
         ) {
-            ContentView()
+            MainView()
                 .frame(width: 300, height: 180)
         }
         .menuBarExtraStyle(.window)
