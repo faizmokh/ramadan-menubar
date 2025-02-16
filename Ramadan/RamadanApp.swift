@@ -9,15 +9,27 @@ import SwiftUI
 
 @main
 struct RamadanApp: App {
-    @StateObject private var viewModel = MainViewModel()
+    @StateObject private var viewModel = RamadanViewModel()
     
     var body: some Scene {
         MenuBarExtra {
-            MainView()
-                .frame(width: 300, height: 180)
+            Text(viewModel.displayLongText)
+            Divider()
+            Button("Settings...", action: openSettings)
+                .keyboardShortcut(",", modifiers: [.command])
+            Button("Quit", action: quit)
+                .keyboardShortcut("q", modifiers: [.command])
         } label: {
             Text(viewModel.displayText)
         }
-        .menuBarExtraStyle(.window)
+    }
+}
+
+extension RamadanApp {
+    func openSettings() {
+        // TODO: Open settings
+    }
+    func quit() {
+        NSApplication.shared.terminate(self)
     }
 }
