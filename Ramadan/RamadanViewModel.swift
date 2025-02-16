@@ -36,10 +36,10 @@ private extension RamadanViewModel {
         } else {
             let daysUntilRamadan = dateWorker.daysUntilRamadan()
             if daysUntilRamadan == 1 {
-                displayText = "Tomorrow"
+                displayText = "Tomorrow (\(dateWorker.ramadanInGregorianDate()))"
                 displayLongText = "1 day until Ramadan"
             } else {
-                displayText = "\(daysUntilRamadan) days"
+                displayText = "\(daysUntilRamadan) days (\(dateWorker.ramadanInGregorianDate()))"
                 displayLongText = "\(daysUntilRamadan) days until Ramadan"
             }
             
