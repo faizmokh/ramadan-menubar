@@ -41,16 +41,14 @@ extension DateWorker {
         let formatter = makeDateFormatter()
         return formatter.string(from: currentDate())
     }
-    
+        
     func ramadanInGregorianDate() -> String {
         let date = currentDate()
         let ramadanDate = getRamadanDate(for: date)
         let targetDate = ramadanDate < date ? getNextRamadanDate(from: ramadanDate) : ramadanDate
-        
         guard let targetDate else { return "" }
         
-        let components = gregorianCalendar.dateComponents([.day, .month], from: targetDate)
-        return "\(components.day ?? 0)/\(components.month ?? 0)"
+        return targetDate.formatted(.dateTime.day().month())
     }
     
     func isRamadan() -> Bool {

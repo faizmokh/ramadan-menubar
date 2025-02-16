@@ -39,7 +39,7 @@ private extension RamadanViewModel {
                 displayText = "Tomorrow (\(dateWorker.ramadanInGregorianDate()))"
                 displayLongText = "1 day until Ramadan"
             } else {
-                displayText = "\(daysUntilRamadan) days (\(dateWorker.ramadanInGregorianDate()))"
+                displayText = "In \(daysUntilRamadan) days (\(dateWorker.ramadanInGregorianDate()))"
                 displayLongText = "\(daysUntilRamadan) days until Ramadan"
             }
             
