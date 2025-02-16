@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CF112F1F2D61C09D00893A9D /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = CF112F1E2D61C09D00893A9D /* Settings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CFA651492D60351C00ADE77C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF112F1F2D61C09D00893A9D /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Ramadan;
 			packageProductDependencies = (
+				CF112F1E2D61C09D00893A9D /* Settings */,
 			);
 			productName = Ramadan;
 			productReference = CFA651372D60351B00ADE77C /* Ramadan.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = CFA6512E2D60351B00ADE77C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CF112F1D2D61C09D00893A9D /* XCRemoteSwiftPackageReference "Settings" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CFA651382D60351B00ADE77C /* Products */;
 			projectDirPath = "";
@@ -549,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF112F1D2D61C09D00893A9D /* XCRemoteSwiftPackageReference "Settings" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Settings";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF112F1E2D61C09D00893A9D /* Settings */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF112F1D2D61C09D00893A9D /* XCRemoteSwiftPackageReference "Settings" */;
+			productName = Settings;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CFA6512F2D60351B00ADE77C /* Project object */;
 }
