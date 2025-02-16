@@ -13,34 +13,27 @@ class RamadanViewModel: ObservableObject {
     
     @Published private(set) var displayLongText = ""
     
-    private var timer: Timer?
     private let dateWorker: DateWorker
     
     init(dateWorker: DateWorker = DateWorker()) {
         self.dateWorker = dateWorker
         updateDisplayText()
-        startTimer()
+        
+        // update display on date change
+        NotificationCenter.default.addObserver(self, selector: #selector(didCalendarDayChanged), name: .NSCalendarDayChanged, object: nil)
     }
     
-    deinit {
-        timer?.invalidate()
+    @objc func didCalendarDayChanged() {
+        updateDisplayText()
     }
 }
 
 private extension RamadanViewModel {
-    func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-            guard let self else { return }
-            self.updateDisplayText()
-        }
-    }
-    
     func updateDisplayText() {
         if dateWorker.isRamadan() {
             displayText = dateWorker.currentHijriDate()
             displayLongText = dateWorker.currentHijriDate()
         } else {
-            // Display days until Ramadan. 1 day before Ramadan, display "Tomorrow"
             let daysUntilRamadan = dateWorker.daysUntilRamadan()
             if daysUntilRamadan == 1 {
                 displayText = "Tomorrow"
