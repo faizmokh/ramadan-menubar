@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Settings
 
 enum IslamicCalendar: String, CaseIterable {
     case islamic = "Islamic"
@@ -53,24 +52,22 @@ struct SettingsView: View {
     }
 }
 struct GeneralSettingsView: View {
-    @AppStorage("selectedCalendar") private var selectedCalendar = IslamicCalendar.islamic.rawValue
-    @AppStorage("hideDockIcon") private var hideDockIcon = false
-    @AppStorage("showHijriDate") private var showHijriDate = true
-    @AppStorage("dayOffset") private var dayOffset = 0
+
+    @StateObject private var settingsManager = SettingsManager.shared
     
     var body: some View {
         Form {
             Section {
-                Picker("Calendar", selection: $selectedCalendar) {
+                Picker("Calendar", selection: $settingsManager.selectedCalendar) {
                     ForEach(IslamicCalendar.allCases, id: \.self) { calendar in
                         Text(calendar.rawValue).tag(calendar.rawValue)
                     }
                 }
                 .pickerStyle(.menu)
-                Toggle("Show Hijri date", isOn: $showHijriDate)
-                Stepper("Day offset: \(dayOffset)", value: $dayOffset, in: -5...5)
-                Toggle("Hide dock icon", isOn: $hideDockIcon)
-                    .onChange(of: hideDockIcon) { value in
+                Toggle("Show Hijri date", isOn: $settingsManager.showHijriDate)
+                Stepper("Day offset: \(settingsManager.dayOffset)", value: $settingsManager.dayOffset, in: -5...5)
+                Toggle("Hide dock icon", isOn: $settingsManager.hideDockIcon)
+                    .onChange(of: settingsManager.hideDockIcon) { value in
                         NSApplication.shared.setActivationPolicy(value ? .accessory : .regular)
                     }
             }

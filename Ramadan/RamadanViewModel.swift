@@ -7,13 +7,16 @@
 
 import Combine
 import Foundation
+import SwiftUI
 
 class RamadanViewModel: ObservableObject {
     @Published private(set) var displayText = ""
-    
     @Published private(set) var displayLongText = ""
     
+    @ObservedObject private var settingsManager = SettingsManager.shared
     private let dateWorker: DateWorker
+    
+    private var cancellables = Set<AnyCancellable>()
     
     init(dateWorker: DateWorker = DateWorker()) {
         self.dateWorker = dateWorker
@@ -21,6 +24,12 @@ class RamadanViewModel: ObservableObject {
         
         // update display on date change
         NotificationCenter.default.addObserver(self, selector: #selector(didCalendarDayChanged), name: .NSCalendarDayChanged, object: nil)
+        
+        settingsManager.objectWillChange
+            .sink { [weak self] in
+                self?.updateDisplayText()
+            }
+            .store(in: &cancellables)
     }
     
     @objc func didCalendarDayChanged() {

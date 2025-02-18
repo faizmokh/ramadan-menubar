@@ -14,45 +14,55 @@ class DateWorker {
         static let arabicLocale = "ar"
     }
 
-    private let islamicCalendar: Calendar
+    private let settings: SettingsManager
     private let gregorianCalendar: Calendar
-    private let currentDate: () -> Date
+    
+    private var islamicCalendar: Calendar {
+        guard let calendar = IslamicCalendar(rawValue: settings.selectedCalendar) else { return Calendar(identifier: .islamic) }
+        var cal = Calendar(identifier: calendar.identifier)
+        cal.timeZone = .current
+        return cal
+    }
+    
+    private var currentDate: Date {
+        let date: Date = .now
+        guard let offsetDate = Calendar.current.date(byAdding: .day, value: settings.dayOffset, to: date) else {
+            return date
+        }
+        return offsetDate
+    }
     
     init(
-        calendar: Calendar = Calendar(identifier: .islamic),
-        gregorianCalendar: Calendar = Calendar(identifier: .gregorian),
-        currentDate: @escaping () -> Date = { .now }
+        settings: SettingsManager = .shared,
+        gregorianCalendar: Calendar = Calendar(identifier: .gregorian)
     ) {
-        self.islamicCalendar = calendar
-        self.currentDate = currentDate
+        self.settings = settings
         self.gregorianCalendar = gregorianCalendar
     }
 }
 
 extension DateWorker {
     func daysUntilRamadan() -> Int {
-        let date = currentDate()
-        let ramadanDate = getRamadanDate(for: date)
-        let isPastRamadan = ramadanDate < date
-        return isPastRamadan ? calculateDaysToNextRamadan(from: date, ramadanDate: ramadanDate) : calculateDaysToRamadan(from: date, to: ramadanDate)
+        let ramadanDate = getRamadanDate(for: currentDate)
+        let isPastRamadan = ramadanDate < currentDate
+        return isPastRamadan ? calculateDaysToNextRamadan(from: currentDate, ramadanDate: ramadanDate) : calculateDaysToRamadan(from: currentDate, to: ramadanDate)
     }
     
     func currentHijriDate() -> String {
         let formatter = makeDateFormatter()
-        return formatter.string(from: currentDate())
+        return formatter.string(from: currentDate)
     }
         
     func ramadanInGregorianDate() -> String {
-        let date = currentDate()
-        let ramadanDate = getRamadanDate(for: date)
-        let targetDate = ramadanDate < date ? getNextRamadanDate(from: ramadanDate) : ramadanDate
+        let ramadanDate = getRamadanDate(for: currentDate)
+        let targetDate = ramadanDate < currentDate ? getNextRamadanDate(from: ramadanDate) : ramadanDate
         guard let targetDate else { return "" }
         
         return targetDate.formatted(.dateTime.day().month())
     }
     
     func isRamadan() -> Bool {
-        let components = islamicCalendar.dateComponents([.month], from: currentDate())
+        let components = islamicCalendar.dateComponents([.month], from: currentDate)
         return components.month == Constants.ramadanMonth
     }
 }
