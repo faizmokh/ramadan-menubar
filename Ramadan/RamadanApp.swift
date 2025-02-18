@@ -27,6 +27,7 @@ struct RamadanApp: App {
             .padding(.vertical, 4)
             Divider()
             Button("Settings...", action: {
+                NSApp.activate(ignoringOtherApps: true)
                 openSettings()
             })
                 .keyboardShortcut(",", modifiers: [.command])
