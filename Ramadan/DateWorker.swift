@@ -11,7 +11,6 @@ class DateWorker {
     private enum Constants {
         static let ramadanMonth = 9
         static let firstDay = 1
-        static let arabicLocale = "ar"
     }
 
     private let settings: SettingsManager
@@ -93,8 +92,8 @@ private extension DateWorker {
     func makeDateFormatter() -> DateFormatter {
         let formatter = DateFormatter()
         formatter.calendar = islamicCalendar
-        formatter.dateStyle = .full
-        formatter.locale = Locale(identifier: Constants.arabicLocale)
+        formatter.dateStyle = .long
+        formatter.locale = Locale.current
         return formatter
     }
 }

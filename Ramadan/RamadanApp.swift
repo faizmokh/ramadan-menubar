@@ -15,7 +15,16 @@ struct RamadanApp: App {
 
     var body: some Scene {
         MenuBarExtra {
-            Text(viewModel.displayLongText)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(viewModel.displayLongText)
+                    .fontWeight(.medium)
+                if viewModel.shouldShowHijriDate {
+                    Text(viewModel.hijriDate)
+                        .controlSize(.small)
+                        .font(.callout)
+                }
+            }
+            .padding(.vertical, 4)
             Divider()
             Button("Settings...", action: {
                 openSettings()

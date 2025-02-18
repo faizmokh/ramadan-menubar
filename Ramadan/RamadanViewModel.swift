@@ -12,6 +12,8 @@ import SwiftUI
 class RamadanViewModel: ObservableObject {
     @Published private(set) var displayText = ""
     @Published private(set) var displayLongText = ""
+    @Published private(set) var shouldShowHijriDate = false
+    @Published private(set) var hijriDate = ""
     
     @ObservedObject private var settingsManager = SettingsManager.shared
     private let dateWorker: DateWorker
@@ -20,25 +22,30 @@ class RamadanViewModel: ObservableObject {
     
     init(dateWorker: DateWorker = DateWorker()) {
         self.dateWorker = dateWorker
-        updateDisplayText()
+        shouldShowHijriDate = settingsManager.showHijriDate
+        hijriDate = dateWorker.currentHijriDate()
+        updateUI()
         
         // update display on date change
         NotificationCenter.default.addObserver(self, selector: #selector(didCalendarDayChanged), name: .NSCalendarDayChanged, object: nil)
         
         settingsManager.objectWillChange
             .sink { [weak self] in
-                self?.updateDisplayText()
+                self?.updateUI()
             }
             .store(in: &cancellables)
     }
     
     @objc func didCalendarDayChanged() {
-        updateDisplayText()
+        updateUI()
     }
 }
 
 private extension RamadanViewModel {
-    func updateDisplayText() {
+    func updateUI() {
+        hijriDate = "Today: \(dateWorker.currentHijriDate())"
+        shouldShowHijriDate = settingsManager.showHijriDate
+
         if dateWorker.isRamadan() {
             displayText = dateWorker.currentHijriDate()
             displayLongText = dateWorker.currentHijriDate()
