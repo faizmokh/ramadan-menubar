@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Ramadan</title>
+        <item>
+            <title>1.1</title>
+            <pubDate>Sun, 23 Feb 2025 22:51:35 +0800</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/faizmokh/ramadan-menubar/refs/heads/main/Releases/Ramadan.dmg" length="5921295" type="application/octet-stream" sparkle:edSignature="G851QIrr0/FqWcSaDxG6e7FJxz3kkni6ZWS21EhzvsTl3Y9jW+16NwOydW2JHXaRi9P+Kb6Z5SOgotIXSQURDg=="/>
+        </item>
+    </channel>
+</rss>
