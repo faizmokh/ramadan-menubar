@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CF1B8F6E2D6A0430006E39B0 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = CF1B8F6D2D6A0430006E39B0 /* Sparkle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CFA651492D60351C00ADE77C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		CFA651522D60351C00ADE77C /* RamadanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamadanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CF1B8F702D6A0C53006E39B0 /* Exceptions for "Ramadan" folder in "Ramadan" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CFA651362D60351B00ADE77C /* Ramadan */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CFA651392D60351B00ADE77C /* Ramadan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CF1B8F702D6A0C53006E39B0 /* Exceptions for "Ramadan" folder in "Ramadan" target */,
+			);
 			path = Ramadan;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1B8F6E2D6A0430006E39B0 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = Ramadan;
 			packageProductDependencies = (
+				CF1B8F6D2D6A0430006E39B0 /* Sparkle */,
 			);
 			productName = Ramadan;
 			productReference = CFA651372D60351B00ADE77C /* Ramadan.app */;
@@ -196,6 +215,7 @@
 			mainGroup = CFA6512E2D60351B00ADE77C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				CF1B8F6C2D6A0430006E39B0 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CFA651382D60351B00ADE77C /* Products */;
@@ -403,6 +423,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ramadan/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -430,6 +451,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ramadan/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,6 +573,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF1B8F6C2D6A0430006E39B0 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF1B8F6D2D6A0430006E39B0 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF1B8F6C2D6A0430006E39B0 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CFA6512F2D60351B00ADE77C /* Project object */;
 }
