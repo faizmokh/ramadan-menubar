@@ -3,6 +3,22 @@
     <channel>
         <title>Ramadan</title>
         <item>
+            <title>1.2</title>
+            <pubDate>Fri, 28 Feb 2025 09:20:22 +0800</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://raw.githubusercontent.com/faizmokh/ramadan-menubar/refs/heads/main/Releases/Ramadan.dmg" length="2209819" type="application/octet-stream" sparkle:edSignature="oS0ovL5g7EIDZZcxAXR7AqVYrTtw37MqyVGLoN5XYv1YNA4hXMsp4X6IlUXNh0hCvhwTy+epaEQaoBxW520gDg=="/>
+            <description>
+                <![CDATA[
+                    <h2>What's New?</h2>
+                    <ul>
+                        <li>Fixed display when it's 30 Shaban</li>
+                    </ul>
+                ]]>
+            </description>
+        </item>
+        <item>
             <title>1.1</title>
             <pubDate>Sun, 23 Feb 2025 22:51:35 +0800</pubDate>
             <sparkle:version>2</sparkle:version>
