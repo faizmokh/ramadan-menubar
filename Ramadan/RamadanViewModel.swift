@@ -45,13 +45,17 @@ private extension RamadanViewModel {
     func updateUI() {
         hijriDate = "Today: \(dateWorker.currentHijriDate())"
         shouldShowHijriDate = settingsManager.showHijriDate
-
+        
         if dateWorker.isRamadan() {
             displayText = dateWorker.currentHijriDate()
             displayLongText = dateWorker.currentHijriDate()
         } else {
             let daysUntilRamadan = dateWorker.daysUntilRamadan()
-            if daysUntilRamadan == 1 {
+            
+            if daysUntilRamadan == 0 {
+                displayText = "Tonight (\(dateWorker.ramadanInGregorianDate()))"
+                displayLongText = "Ramadan starts tonight. Don't forget your Taraweeh."
+            } else if daysUntilRamadan == 1 {
                 displayText = "Tomorrow (\(dateWorker.ramadanInGregorianDate()))"
                 displayLongText = "1 day until Ramadan"
             } else {
